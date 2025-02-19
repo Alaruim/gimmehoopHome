@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GIMMEHOOP</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="home.css">
+	<!-- Подключаем шрифт Inter -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<!-- Полоска с промокодом -->
+		<div class="promo-bar">
+			<div>
+				BUY 2 GET 1 FREE <span class="code"> сode: </span> B2G1
+			</div>
+		</div>
+
+		<!-- Основной хедер -->
+		<nav class="navbar">
+			<div class="content">
+				<div class="header-container">
+
+                    <div class="burger-menu desktop-hidden">
+						<div class="burger-icon" onclick="toggleMenu()">
+						  <div class="bar"></div>
+						  <div class="bar"></div>
+						  <div class="bar"></div>
+						</div>
+						<div class="dropdown-menu mobile-hidden">
+						  <a href="#">Home</a>
+						  <a href="#">Shop</a>
+						  <a href="#">About Us</a>
+						</div>
+					</div>
+
+					<div class="logo">
+						<img src="images/logo.png" alt="Logo">
+					</div>
+					<a class="mobile-hidden" href="#">Home</a>
+					<div class="dropdown-shop mobile-hidden">
+						<div class="a-shop">
+							<a href="#">
+								<span>Shop</span>
+								<img src="images/shop-vector.svg" alt="Logo">
+							</a>
+							<div class="dropdown-menu-shop">
+								<a href="#">Framed Canvas Collection</a>
+								<a href="#">Basketball Art Framed Hoops</a>
+								<a href="#">Surfboards</a>
+								<a href="#">Arts</a>
+							</div>
+						</div>
+					</div>
+					<a  class="mobile-hidden" href="#">About Us</a>
+					<div class="nav-icons ">
+						<button class="search-btn mobile-hidden">
+							<img src="images/search.svg" alt="Logo">
+						</button>
+						<button class="cart-btn">
+							<div class="cart-and-circle">
+								<img src="images/cart.svg" alt="Logo">
+								<div>0</div>
+							</div>
+							<span class="mobile-hidden">$0.00</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- 1 блок -->
+     <div class="content">
+        <div class="block-main">
+            <img class="block-main-light mobile-hidden" src="images/home/block-main-image-light.png" alt="">
+            <img class="block-main-light desktop-hidden" src="images/home/block-main-image-lightMobile.png" alt="">
+            <div class="block-main-descr">
+                <div class="block-main-descr-head">GIMMEHOOP</div>
+                <div class="block-main-descr-text">Show off your ultimate fandom with this collection of framed basketball hoops. Each unique piece is framed in an oversized Baroque style frame with a leather backing, giving the ultimate sport the royal treatment. This collection is sure to be a conversation starter among guests.</div>
+            </div>
+            <button class="block-main-button">
+                <span>SHOP NOW</span>
+                <img class="mobile-hidden" src="images/home/block-main-button-image.svg" alt="">
+            </button>
+            <div class="block-main-promocode">
+                <div class="block-main-promocode-maj">
+                    USE CODE<br>TAKE10<br>FOR 10%<br>OFF
+                </div>
+                <div class="block-main-promocode-min">
+                    USE CODE<br>TAKE10<br>FOR 10%<br>OFF
+                </div>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- 2 блок -->
+    <div class="content">
+        <div class="block-ourCollections">
+            <h2>OUR COLLECTIONS</h2>
+            <div class="block-ourCollections-boxShadow">
+                <div class="block-ourCollections-boxShadow-list">
+                    <div class="block-ourCollections-boxShadow-list-element order3">
+                        <a href=""></a>
+                        <span>SURF<br>BOARDS</span>
+                        <img src="images/home/block-ourCollections-boxShadow-list-element-image-1.png" alt="">
+                    </div>
+                    <div class="block-ourCollections-boxShadow-list-element order1">
+                        <a href=""></a>
+                        <span>BASKETBALL<br>ARTS</span>
+                        <img src="images/home/block-ourCollections-boxShadow-list-element-image-2.png" alt="">
+                    </div>
+                    <div class="block-ourCollections-boxShadow-list-element order2">
+                        <a href=""></a>
+                        <span>FRAMED<br>CANVAS</span>
+                        <img src="images/home/block-ourCollections-boxShadow-list-element-image-3.png" alt="">
+                    </div>
+                    <div class="block-ourCollections-boxShadow-list-element order4">
+                        <a href=""></a>
+                        <span>FRAMED<br>ARTS</span>
+                        <img src="images/home/block-ourCollections-boxShadow-list-element-image-4.png" alt="">
+                    </div>
+                </div>
+                <h2 class="mobile-hidden">BEST SELLERS</h2>
+                <button class="desktop-hidden">SHOP ALL</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 3 блок -->
+    <div class="block-bestSellers">
+            <h2 class="desktop-hidden">BEST SELLERS</h2>
+            <div class="block-bestSellers-slider">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-2.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-2.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-image">
+                                <div class="swiper-slide-image-prod">
+                                    <img src="images/home/bestSeller-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-shadow">
+                                    <img src="images/home/bestSeller-slide-shadow.png" alt="">
+                                </div>
+                                <div class="swiper-slide-image-foot">
+                                    <span>50% OFF</span>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                            <div class="name-price">
+                                <div class="name">
+                                    GOOD VIBES FRAMED HOOP
+                                </div>
+                                <div class="price">
+                                    <span class="old-price">$499.90</span>
+                                    <span class="new-price">$299.90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev mobile-hidden"></div>
+                    <div class="swiper-button-next mobile-hidden"></div>
+                    <div class="swiper-pagination mobile-hidden"></div>
+                </div>
+            </div>
+    </div>
+
+   <!-- 4 блок -->    
+    <div class="content">
+        <div class="block-happyCustomers">
+            <h2>HAPPY CUSTOMERS</h2>
+            <div class="block-happyCustomers-imagesMobile desktop-hidden">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+            </div>
+            <div class="block-happyCustomers-images">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img class="mobile-hidden" src="images/home/block-happyCustomers-images-1.png" alt="">
+                <img class="mobile-hidden" src="images/home/block-happyCustomers-images-1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- 5 блок -->    
+    <div class="content">
+        <div class="block-rev">
+            <h2>THE CHOICE OF MORE THAN 5,000 CUSTOMERS</h2>
+            <div class="bar-stars">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0ZM8 2L9.364 6.197H13.777L10.206 8.791L11.57 12.988L8 10.394L4.429 12.988L5.793 8.791L2.222 6.197H6.636L8 2Z" fill="#00B67A"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0ZM8 2L9.364 6.197H13.777L10.206 8.791L11.57 12.988L8 10.394L4.429 12.988L5.793 8.791L2.222 6.197H6.636L8 2Z" fill="#00B67A"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0ZM8 2L9.364 6.197H13.777L10.206 8.791L11.57 12.988L8 10.394L4.429 12.988L5.793 8.791L2.222 6.197H6.636L8 2Z" fill="#00B67A"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0ZM8 2L9.364 6.197H13.777L10.206 8.791L11.57 12.988L8 10.394L4.429 12.988L5.793 8.791L2.222 6.197H6.636L8 2Z" fill="#00B67A"/>
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0ZM8 2L9.364 6.197H13.777L10.206 8.791L11.57 12.988L8 10.394L4.429 12.988L5.793 8.791L2.222 6.197H6.636L8 2Z" fill="#00B67A"/>
+                </svg>
+                <span class="desktop-hidden">Based on +1.500 <a href="">rewiews</a></span>
+            </div>
+            <span class="mobile-hidden">Based on +1.500 <a href="">rewiews</a></span>
+            <div class="block-rev-texts">
+                <div class="block-rev-texts-text">
+                    <span>Sophia</span>
+                    <p>My kids love playing with it. Solid construction and beautiful design.</p>
+                </div>
+                <div class="block-rev-texts-text">
+                    <span>Liam</span>
+                    <p>This is my second purchase from Gimmehoop, and I’m just as impressed as the first time. The quality and design are unmatched!</p>
+                </div>
+                <div class="block-rev-texts-text">
+                    <span>Daniel</span>
+                    <p>Excellent hoop, top-level quality. Robust construction and stylish design.</p>
+                </div>
+            </div>
+            <button class="desktop-hidden">ALL REVIEWS</button>
+        </div>
+    </div>
+
+    <!-- 6 блок -->    
+    <div class="block-line-shadow">
+		<div class="content">
+			<div class="block-slider-chosen2">
+				
+				<div class="chosen-desc">
+					<h3 class="chosen-desc-home-h3">WE ARE DESIGNERS</h3>
+					<p class="mobile-hidden">Our designs intentionally inspire self-expression and add personality to your everyday routine. Join our trendsetting community and shop our one-of-a-kind products today.</p>
+				</div>
+				<div class="slider-cart">
+					<div class="swiper mySwiper">
+						<div class="swiper-pagination"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="images/card-slider-1-1.png" alt=""></div>
+							<div class="swiper-slide"><img src="images/card-slider-1-1.png" alt=""></div>
+							<div class="swiper-slide"><img src="images/card-slider-1-1.png" alt=""></div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+				<p class="desktop-hidden">Our designs intentionally inspire self-expression and add personality to your everyday routine. Join our trendsetting community and shop our one-of-a-kind products today.</p>
+			</div>
+		</div>
+	</div>
+
+    <!-- footer -->
+    <div class="footer mobile-hidden">
+        <div class="content footer-content">
+            <div class="footer-menu">
+                <h3>MENU</h3>
+                <a href="">Home</a>
+                <a href="">Shop</a>
+                <a href="">
+                    <li>Framed Canvas Collection </li>
+                </a>
+                <a href="">
+                    <li>Basketball Art Framed Hoops </li>
+                </a>
+                <a href="">
+                    <li> Surfboards</li>
+                </a>
+                <a href="">
+                    <li>Arts</li>
+                </a>
+                <a href="">About Us</a>
+            </div>
+            <div class="footer-center">
+                <div class="contacts">
+                    <span>GIMMEHOOP</span>
+                    <a href="">support@gimmehoop.com</a>
+                    <div class="contacts-img">
+                        <a href=""><img src="images/facebook.svg" alt=""></a>
+                        <a href=""><img src="images/inst.svg" alt=""></a>
+                        <a href=""><img src="images/tt.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="cart-copyright">
+                    <img src="images/card.png" alt="">
+                    <p>Copyright © 2023 GimmeHoop LLC, All Rights Reserved</p>
+                </div>
+            </div>
+            <div class="footer-policy">
+                <h3>POLICY</h3>
+                <a href="">Refund Policy</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+                <a href="">Shipping Policy</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer desktop-hidden">
+        <div class="content footer-content">
+            <div class="contacts">
+                <span>GIMMEHOOP</span>
+                <a href="">support@gimmehoop.com</a>
+                <div class="contacts-img">
+                    <a href=""><img src="images/facebook.svg" alt=""></a>
+                    <a href=""><img src="images/inst.svg" alt=""></a>
+                    <a href=""><img src="images/tt.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer-center1">
+                <div class="footer-menu">
+                    <h3>MENU</h3>
+                    <a href="">Home</a>
+                    <a href="">Shop</a>
+                    <a href="">
+                        <li>Framed Canvas Collection </li>
+                    </a>
+                    <a href="">
+                        <li>Basketball Art Framed Hoops </li>
+                    </a>
+                    <a href="">
+                        <li> Surfboards</li>
+                    </a>
+                    <a href="">
+                        <li>Arts</li>
+                    </a>
+                    <a href="">About Us</a>
+                </div>
+                <div class="footer-policy">
+                    <h3>POLICY</h3>
+                    <a href="">Refund Policy</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Shipping Policy</a>
+                </div>
+            </div>
+            
+            <div class="cart-copyright">
+                <img src="images/card.png" alt="">
+                <p>Copyright © 2023 GimmeHoop LLC, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
