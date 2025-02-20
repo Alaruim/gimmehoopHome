@@ -406,6 +406,7 @@
             align-items: center;
             .block-ourCollections-boxShadow-list-element{
                 img{
+                    object-fit: cover;
                     width: 370px !important;
                     height: 400px !important;  
                 }
