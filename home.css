@@ -7,33 +7,33 @@
     background-size: cover; 
     background-position: center; 
     background-image: url("images/home/block-main-image-background.png");
-    height: min(75.234375vw, 963px);
+    height: 75.234375vw;
     position: relative;
     .block-main-light{
         position: absolute;
-        height: min(75.234375vw, 963px);
-        right: min(17.34375vw, 222px);
+        height: 75.234375vw;
+        right: 17.34375vw;
         z-index: 8;
         top: 0;
     }
     .block-main-descr{
         text-align: end;
         .block-main-descr-head{
-            top:  min(4.375vw, 56px);
-            right: min(4.6875vw, 60px);
+            top:  4.375vw;
+            right: 4.6875vw;
             font-weight: 900;
-            font-size: min(3.75vw, 48px);
+            font-size: 3.75vw;
             line-height: 0.9;
             color: #fff;
             position: absolute;
             z-index: 10;
         }
         .block-main-descr-text{
-            width: min(31.25vw, 400px);
-            top: min(9.53125vw, 122px);
-            right: min(4.6875vw, 60px);
+            width: 31.25vw;
+            top: 9.53125vw;
+            right: 4.6875vw;
             font-weight: 400;
-            font-size: min(1.015625vw, 13px);
+            font-size: 1.015625vw;
             line-height: 1.52;
             color: #fff;
             opacity: 0.6;
@@ -42,19 +42,19 @@
         }
     }
     .block-main-button{
-        right: min(4.6875vw, 60px);
-        top: min(27.34375vw, 350px);
-        padding: min(1.328125vw, 17px) min(1.71875vw, 22px) min(1.328125vw, 17px) min(13.125vw, 168px);
+        right: 4.6875vw;
+        top: 27.34375vw;
+        padding: 1.328125vw 1.71875vw 1.328125vw 13.125vw;
         position: absolute;
         display: flex;
         align-items: center;
-        gap: min(1.5625vw, 20px);
+        gap: 1.5625vw;
         border-radius: 5px;
         border: 2px solid white;
         font-family: 'Inter', sans-serif;
         span{
             font-weight: 700;
-            font-size: min(1.5625vw, 20px);
+            font-size: 1.5625vw;
             line-height: 1.1;
             color: #fff;
         }
@@ -175,8 +175,10 @@
                         font-size: 30px;
                         font-family: 'Inter', sans-serif;
                     }
-                    button:hover{
-                        color: #656565;
+                    @media (hover) {
+                        button:hover {
+                            color: #656565;
+                        }
                     }
                 }
             }
@@ -225,8 +227,10 @@
             --swiper-navigation-top-offset: calc(100% - 20px);
             z-index: 11;
         }
-          .swiper-button-prev:hover, .swiper-button-next:hover{
-            color: #656565;
+        @media (hover) {
+            .swiper-button-prev:hover, .swiper-button-next:hover{
+                color: #656565;
+            }
         }
     }
 
@@ -438,9 +442,15 @@
             font-family: 'Inter', sans-serif;
             margin: 53px 0;
         }
-        button:hover, button:active {
+        button:active {
             color: white;
             background-color: black;
+        }
+        @media (hover) {
+            button:hover {
+                color: white;
+                background-color: black;
+            }
         }
     }
 
